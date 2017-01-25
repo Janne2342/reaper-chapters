@@ -1,11 +1,7 @@
 #!/usr/bin/python
 
 # -*- coding: utf-8 -*-
-"""
-#Created on Sat Jan 21 17:52:16 2017
 
-@author: cusha
-"""
 import sys
 
 def zeilen(zeile):
