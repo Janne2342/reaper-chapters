@@ -20,7 +20,7 @@ def zeilen(zeile):
     if time[0] == ' ':
         time = '0' + time[1:]    
     #print time
-    titel = zeile[4:-15]
+    titel = zeile[2:-15]
     #while titel[0] == ' ':
         #titel = titel[1:]
     titel = titel.strip(' ')
