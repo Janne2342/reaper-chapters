@@ -36,7 +36,12 @@ if len(sys.argv) < 2:
 if len(sys.argv) > 2:
     print 'Please attach only ONE file.'
     sys.exit()
-
+try:
+    open(sys.argv[1],"r")
+except IOError:
+    print('File not found.')
+    sys.exit()    
+    
 filename = sys.argv[1]
 file_alt = open(filename,"r") 
 alte_liste = file_alt.readlines()
