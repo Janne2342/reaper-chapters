@@ -29,7 +29,14 @@ def zeilen(zeile):
     neue_zeile = time + ' ' + titel + '\r\n'
     #print neue_zeile
     return(neue_zeile)
-    
+
+if len(sys.argv) < 2:
+    print 'Please attach a file.'
+    sys.exit()
+if len(sys.argv) > 2:
+    print 'Please attach only ONE file.'
+    sys.exit()
+
 filename = sys.argv[1]
 file_alt = open(filename,"r") 
 alte_liste = file_alt.readlines()
