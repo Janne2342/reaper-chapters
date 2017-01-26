@@ -7,8 +7,9 @@ import sys
 def zeilen(zeile):
     if "\r\n" in zeile:
         zeile = zeile.replace('\r\n','')
-    while zeile[-1] == ' ':
-        zeile = zeile[:-1]
+    #while zeile[-1] == ' ':
+        #zeile = zeile[:-1]
+    zeile.strip(' ')
 
     time = zeile[-12:]
     #print time    
