@@ -21,8 +21,9 @@ def zeilen(zeile):
         time = '0' + time[1:]    
     #print time
     titel = zeile[4:-15]
-    while titel[0] == ' ':
-        titel = titel[1:]
+    #while titel[0] == ' ':
+        #titel = titel[1:]
+    titel.strip(' ')
     
     #print titel
     neue_zeile = time + ' ' + titel + '\r\n'
