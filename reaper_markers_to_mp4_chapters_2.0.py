@@ -9,7 +9,7 @@ def zeilen(zeile):
         zeile = zeile.replace('\r\n','')
     #while zeile[-1] == ' ':
         #zeile = zeile[:-1]
-    zeile.strip(' ')
+    zeile = zeile.strip(' ')
 
     time = zeile[-12:]
     #print time    
@@ -23,7 +23,7 @@ def zeilen(zeile):
     titel = zeile[4:-15]
     #while titel[0] == ' ':
         #titel = titel[1:]
-    titel.strip(' ')
+    titel = titel.strip(' ')
     
     #print titel
     neue_zeile = time + ' ' + titel + '\r\n'
